@@ -165,13 +165,13 @@ python train_dm.py \
 Download pretrained NAMM, MDM, and DM checkpoints for all the demonstrated constraints here: https://caltech.box.com/v/nammcheckpoints. The NAMM and MDM checkpoints will go under `./checkpoints`, and the DM checkpoints will go under `./score_checkpoints`. Note that these checkpoints were created with an older version of JAX/Flax (v0.4.11) and saved with legacy Flax checkpointing.
 
 We provide the following notebooks to demonstrate how to use pretrained checkpoints. They support both legacy Flax and Orbax checkpointing.
-1. `eval.ipynb`. This notebook shows how to generate samples from an MDM and restore them to the constrained space with the learned inverse mirror map. It includes comparisons to a vanilla DM. It can be used to generate results similar to the ones shown in this figure:
+1. `notebooks/eval.ipynb`. This notebook shows how to generate samples from an MDM and restore them to the constrained space with the learned inverse mirror map. It includes comparisons to a vanilla DM. It can be used to generate results similar to the ones shown in this figure:
 <p align="center">
   <img src="assets/constraint_improvement.png" />
 </p>
 
-2. `data_assimilation_burgers.ipynb` demonstrates data assimilation for a 1D Burgers' system with the 1D Burgers' PDE constraint.
-3. `data_assimilation_incompress.ipynb` demonstrates data assimilation for a Kolmogorov flow with a divergence-free constraint. The data assimilation notebooks show how to generate results like the ones in this figure:
+2. `notebooks/data_assimilation_burgers.ipynb` demonstrates data assimilation for a 1D Burgers' system with the 1D Burgers' PDE constraint.
+3. `notebooks/data_assimilation_incompress.ipynb` demonstrates data assimilation for a Kolmogorov flow with a divergence-free constraint. The data assimilation notebooks show how to generate results like the ones in this figure:
 <p align="center">
   <img src="assets/da.png" />
 </p>
