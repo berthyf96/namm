@@ -67,10 +67,7 @@ python write_data.py \
 ```
 
 ### 2. Train NAMM
-During training, the forward mirror map $\mathbf{g}_\phi$ maps training images into a "mirror" space. We perturb these mirror images with additive white Gaussian noise of varying noise levels to create training data for the inverse mirror map $\mathbf{f}_\psi$. The inverse mirror map attempts to map these noisy mirror images back to the original space. Both maps are trained jointly to minimize the following objective:
-$$
-\mathcal{L}(\phi,\psi):=\mathcal{L}_{\text{cycle}}(\mathbf{g}_\phi,\mathbf{f}_\psi)+\lambda_{\text{constr}}\mathcal{L}_{\text{constr}}(\mathbf{g}_\phi,\mathbf{f}_\psi)+\lambda_{\text{reg}}\mathcal{R}(\mathbf{g}_\phi).
-$$
+During training, the forward mirror map $g_\phi$ maps training images into a "mirror" space. We perturb these mirror images with additive white Gaussian noise of varying noise levels to create training data for the inverse mirror map $f_\psi$. The inverse mirror map attempts to map these noisy mirror images back to the original space. Both maps are trained jointly to minimize an objective function that includes a cycle-consistency loss, a constraint distance loss, and regularization.
 An illustration of the training procedure is shown below:
 <p align="center">
   <img src="assets/namm.png" />
