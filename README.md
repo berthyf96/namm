@@ -11,7 +11,7 @@ Please consider citing this work if you find it useful:
 @inproceedings{
   feng2025neural,
   title={Neural Approximate Mirror Maps for Constrained Diffusion Models},
-  author={Berthy Feng and Ricardo Baptista and Katherine Bouman},
+  author={Berthy T. Feng and Ricardo Baptista and Katherine L. Bouman},
   booktitle={The Thirteenth International Conference on Learning Representations},
   year={2025},
   url={https://openreview.net/forum?id=vgZDcUetWS}
